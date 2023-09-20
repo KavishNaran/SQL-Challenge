@@ -1,4 +1,5 @@
 -- List the employee number, last name, first name, sex, and salary of each employee.
+
 SELECT employees.emp_no, 
 		employees.last_name, 
 		employees.first_name,
@@ -9,6 +10,7 @@ JOIN salaries
 ON employees.emp_no = salaries.emp_no;
 
 -- List the first name, last name, and hire date for the employees who were hired in 1986.
+
 SELECT employees.first_name,
 		employees.last_name,
 		employees.hire_date
@@ -30,6 +32,7 @@ JOIN employees ON
 dept_manager.emp_no = employees.emp_no
 
 -- List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+
 SELECT dept_emp.emp_no, 
 	   employees.last_name, 
 	   employees.first_name, 
